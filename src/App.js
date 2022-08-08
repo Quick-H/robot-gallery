@@ -1,4 +1,4 @@
-import  Robots from './pages/Robots.js'
+import  Robots from './components/Robots.js'
 import styles from './App.module.css'
 function App() {
   return (
