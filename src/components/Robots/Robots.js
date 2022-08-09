@@ -2,7 +2,7 @@ import React, {useEffect,useState} from 'react'
 import axios from 'axios'
 import styles from './Robots.module.css'
 
-const Robots = ()=>{
+const RobotsPage = ()=>{
 	const [users,setUsers]=useState([])
 	const [loading,setLoading]=useState(false)
 	
@@ -37,4 +37,4 @@ const Robots = ()=>{
 	)
 	
 }
-export default React.memo(Robots) 
+export const Robots = React.memo(RobotsPage) 

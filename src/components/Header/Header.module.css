@@ -1,0 +1,36 @@
+.header{
+	height: 50px;
+	background-color:#525288;
+}
+.header-content{
+	width: 1200px;
+	height: 50px;
+	margin:0 auto;
+	line-height: 50px;
+}
+.header-content img{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	vertical-align:middle;
+}
+.header-content h3{
+	display: inline-block;
+	vertical-align:middle;
+	font-size: 35px;
+	color:#93b5cf;
+}
+.btns{
+	float:right;
+	width: 150px;
+	height: 50px;
+}
+.btns button{
+	width: 80px;
+	height: 35px;
+	background-color: #fff;
+	transition:all 0.5s ease;
+}
+.btns .login-btn{
+	background-color: #5cb3cc;
+}

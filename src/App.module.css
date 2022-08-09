@@ -2,8 +2,14 @@
 	margin: 0;
 	padding: 0;
 }
+ul,ol{
+	list-style:none;
+}
+input{
+	outline:none;
+	border:none;
+}
 
 .App {
 	background-color: #61649f;
-	padding:30px 0;
 }
