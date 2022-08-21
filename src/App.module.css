@@ -10,6 +10,7 @@ input{
 	border:none;
 }
 
-.App {
+.app {
+	min-height: 100vh;
 	background-color: #61649f;
 }

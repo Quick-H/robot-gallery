@@ -1,6 +1,6 @@
 .not-found{
 	min-width: 1200px;
-	height: 100vh;
+	height: calc(100vh - 170px);
 }
 .not-found p{
 	font-size: 50px;
