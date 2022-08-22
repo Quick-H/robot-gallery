@@ -1,6 +1,7 @@
 .login{
 	min-width: 1200px;
-	height: 100vh;
+	height: calc(100vh - 170px);
+	min-height:500px;
 }
 .login-wrap{
 	position:relative;
