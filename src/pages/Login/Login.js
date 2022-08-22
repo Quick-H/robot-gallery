@@ -8,7 +8,6 @@ export const Login = () => {
 	const navigate = useNavigate();
 	const dispatch = useDispatch();
 	const { state } = useLocation();
-
 	const returnURL = state?.returnURL || "/home";
 	const handleLogin = () => {
 		dispatch(sign_in());

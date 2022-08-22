@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate, NavLink} from "react-router-dom";
+import { useNavigate, NavLink, Navigate, useLocation} from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../../store/action/signin.action.js";
 import styles from "./Header.module.css";
@@ -7,12 +7,11 @@ import styles from "./Header.module.css";
 export const Header = () => {
 	const navigate = useNavigate();
 	const login = useSelector((state) => state.login.login);
-
 	const dispatch = useDispatch();
-
+	const {path}=useLocation()
 	const handleLogout = () => {
 		dispatch(logout());
-		navigate("/");
+		return <Navigate t0={'/login'} state={path}/>
 	};
 	return (
 		<div className={styles.header}>
