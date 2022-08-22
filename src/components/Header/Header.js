@@ -11,7 +11,7 @@ export const Header = () => {
 	const {path}=useLocation()
 	const handleLogout = () => {
 		dispatch(logout());
-		return <Navigate t0={'/login'} state={path}/>
+		return <Navigate to={'/login'} state={path}/>
 	};
 	return (
 		<div className={styles.header}>
