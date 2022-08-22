@@ -8,7 +8,8 @@ export const Header = () => {
 	const navigate = useNavigate();
 	const login = useSelector((state) => state.login.login);
 	const dispatch = useDispatch();
-	const {path}=useLocation()
+	const { path } = useLocation()
+	
 	const handleLogout = () => {
 		dispatch(logout());
 		return <Navigate to={'/login'} state={path}/>
@@ -22,7 +23,7 @@ export const Header = () => {
 						navigate("/home");
 					}}
 				>
-					<img src={"/logo192.png"} width="35" height="35" />
+					<img src={"/logo192.png"} width="35" height="35" alt={'图片'} />
 					<h3>React-Robots</h3>
 				</div>
 				<ul>
