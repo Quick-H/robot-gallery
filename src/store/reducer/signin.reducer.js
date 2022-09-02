@@ -1,5 +1,5 @@
 import {handleActions} from 'redux-actions'
-import {sign_in,logout} from '../action/signin.action.js'
+import {log_in,log_out} from '../action/signin.action.js'
 
 const initialState={
 	login:false
@@ -7,10 +7,10 @@ const initialState={
 
 const signinReducer = handleActions(
 	{
-		[sign_in]:()=>({
+		[log_in]:()=>({
 			login:true
 		}),
-		[logout]:()=>({
+		[log_out]:()=>({
 			login:false
 		})
 	},

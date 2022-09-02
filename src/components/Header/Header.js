@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate, NavLink, Navigate, useLocation} from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { logout } from "../../store/action/signin.action.js";
+import { log_out } from "../../store/action/signin.action.js";
 import styles from "./Header.module.css";
 
 export const Header = () => {
@@ -11,7 +11,7 @@ export const Header = () => {
 	const { path } = useLocation()
 	
 	const handleLogout = () => {
-		dispatch(logout());
+		dispatch(log_out());
 		return <Navigate to={'/login'} state={path}/>
 	};
 	return (
@@ -50,16 +50,7 @@ export const Header = () => {
 						<button className={styles["login-btn"]} onClick={handleLogout}>
 							退出登录
 						</button>
-					) : (
-						<button
-							className={styles["login-btn"]}
-							onClick={() => {
-								navigate("/login");
-							}}
-						>
-							登录
-						</button>
-					)}
+					) : null}
 				</div>
 			</div>
 		</div>
